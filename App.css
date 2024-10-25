@@ -1,0 +1,59 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center;     /* Centers content horizontally */
+  height: 100vh;           /* Takes full viewport height */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.operations {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  margin: 5px;
+}
+
+.Result, .Input {
+  margin: 10px auto;
+  width: 10rem;
+  height :25px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+
+.Operations{
+  color: white;
+  background-color: chocolate;
+}
